@@ -23,7 +23,7 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
 
 ```json
 {
-    "serverName": "",
-    "ip": ""
+    "serverName": "snegrin@tecnologoinformatico.com",
+    "ip": "150.230.92.74"
 }
 ```
