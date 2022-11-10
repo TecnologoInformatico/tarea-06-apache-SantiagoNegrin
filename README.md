@@ -38,12 +38,12 @@ git clone https://github.com/TecnologoInformatico/AdmInf-web.git
 
 8. Reinicie el servidor apache para que los cambios tengan efecto.
     
-    udo systemctl reload apache2
+    udo systemctl reload apache2 
     sudo systemctl restart apache2
     
 9. Copie el contenido del directorio ~/repositorios/AdmInf-web a /var/www/$ALUMNO, de tal modo que el contenido del repositorio antes clonado se encuentre en el root de la aplicación.
 
-cp -r ~/repositorios/AdmInf-web/ /var/www/snegrin/
+    cp -r ~/repositorios/AdmInf-web/ /var/www/snegrin/
 
 10. Verifique que el servidor funcione correctamente.
     curl snegrin.tecnologoinformatico.com
