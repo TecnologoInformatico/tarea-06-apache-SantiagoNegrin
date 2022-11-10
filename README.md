@@ -46,7 +46,9 @@ git clone https://github.com/TecnologoInformatico/AdmInf-web.git
     cp -r ~/repositorios/AdmInf-web/ /var/www/snegrin/
 
 10. Verifique que el servidor funcione correctamente.
+
     curl snegrin.tecnologoinformatico.com
+    
 11. Ingrese la IP del servidor y el servername a continuación:
 
 ```json
