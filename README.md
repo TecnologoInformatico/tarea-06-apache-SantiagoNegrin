@@ -22,28 +22,36 @@ git clone https://github.com/TecnologoInformatico/AdmInf-web.git
     mkdir /var/www/snegrin
     
 5. Asigne como propietario del directorio su usuario.
-    sudo chrown -R ubuntu:ubuntu /var/www/snegrin/
+    sudo chown -R ubuntu:ubuntu /var/www/snegrin/
     
 6. Configure un nuevo Virtual host. (copiando el archivo de configuración por defecto)
   6.1. ServerName $ALUMNO.tecnologoinformatico.com
   6.2. Correo de contacto con el administrador.
   6.3. El root de la aplicación. (/var/www/$ALUMNO)
     sudo cp 000-default.conf confTecnologo.conf
-    56  sudo nano testconf.conf
+    sudo nano testconf.conf
+    ServerName snegrin.tecnologoinformatico.com
 
 7. Modifique el archivo /etc/hosts de modo que el ServerName coincida con este equipo `127.0.0.1`.
-8. Reinicie el servidor apache para que los cambios tengan efecto.
 
+127.0.0.1 snegrin.tecnologoinformatico.com
+
+8. Reinicie el servidor apache para que los cambios tengan efecto.
+    
+    udo systemctl reload apache2
+    sudo systemctl restart apache2
+    
 9. Copie el contenido del directorio ~/repositorios/AdmInf-web a /var/www/$ALUMNO, de tal modo que el contenido del repositorio antes clonado se encuentre en el root de la aplicación.
 
-cp AdmInf-web/ /var/www/snegrin/
+cp -r ~/repositorios/AdmInf-web/ /var/www/snegrin/
 
 10. Verifique que el servidor funcione correctamente.
+    curl snegrin.tecnologoinformatico.com
 11. Ingrese la IP del servidor y el servername a continuación:
 
 ```json
 {
     "serverName": "snegrin@tecnologoinformatico.com",
-    "ip": "150.230.92.74"
+    "ip": "152.67.63.92"
 }
 ```
