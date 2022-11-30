@@ -5,10 +5,11 @@ Reemplace `$ALUMNO` por el nombre de su nombre de usuario en www.tecnologoinform
 EJ: `dmascheroni`
 
 1. Cree el directorio ~/repositorios y dentro clone el
-repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
+repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`.
 
-mkdir ~/repositorios
-git clone https://github.com/TecnologoInformatico/AdmInf-web.git
+mkdir ~/repositorios.
+
+git clone https://github.com/TecnologoInformatico/AdmInf-web.git.
 
 2. Actualice el repositorio de la lista de paquetes.
     `apt update`
